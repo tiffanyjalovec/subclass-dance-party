@@ -19,9 +19,7 @@ makeBlinkyDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   makeDancer.prototype.step.call(this);
-  this.$node.slideDown('slow', function(){
-    $node.css('border', 'purple');
-  });
+  this.$node.toggleClass('blinkyDancer');
   // console.log($node2);
 };
 
