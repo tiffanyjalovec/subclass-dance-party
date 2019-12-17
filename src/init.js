@@ -31,6 +31,8 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
+    console.log(window.dancers + "this is dancers");
+    console.log(dancer + "this is dancer");
   });
 });
 
