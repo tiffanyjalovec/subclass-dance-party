@@ -3,6 +3,9 @@ body, html{
 }
 
 body {
+  background-image: url('https://wallup.net/wp-content/uploads/2015/12/232470-nature-landscape-mountain-clouds-snowy_peak-Mount_Kilimanjaro-Africa-snow-aerial_view-bird039s_eye_view.jpg');
+  background-size: cover;
+
   margin: 0px;
   background-color:#444;
   font-size: 18px;
@@ -27,19 +30,35 @@ body, a:link, a:visited, a:active {
 }
 
 .defaultDance {
-  border:10px solid yellow;
+  border:10px;
   border-radius:10px;
   position:absolute;
 }
 
 .blinkyDancer {
-  border:10px solid blue;
-  border-radius:10px;
+  border:10px;
+  border-radius: 10px;
   position:absolute;
 }
 
 .growingDancer {
- transition: all .2s ease-in-out;
- border: 15px solid yellow;
- border-radius: 15px;
+  transition: all .2s ease-in-out;
+  border: 15px solid pink;
+  border-radius: 18px;
 }
+
+
+.planeDancer {
+  /* width: 50%;
+  height: 50%; */
+  border: 10px;
+  border-radius: 10 px;
+  animation: rotation 8s infinite linear;
+  -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -1,6 +1,6 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  //this.$node = $('<span class="dancer2"></span>');
+  this.$node = $('<img width="150" height="150" src="https://png2.cleanpng.com/sh/8c2f24b080e55145e3fd5e5279280dbb/L0KzQYm3VME1N6Vpj5H0aYP2gLBuTfFqeqFxedDuLXnmf7A0gcUua5DyiOd9ZYKwebT2jwMubp1uf9p9LXHsgsHzgf5mNWZmfKQ9Y3HpQoWBUcM1NmEASKY8OUe3QYa5U8c0OWc4SaM9OUWxgLBu/kisspng-airplane-icon-a5-computer-icons-flight-airplane-5ad24caf248134.0904397415237316311495.png" class="defaultDance">');
   //this.oldStep = this.step;
 };
 
@@ -19,7 +19,7 @@ makeBlinkyDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   makeDancer.prototype.step.call(this);
-  this.$node.toggleClass('blinkyDancer');
+  this.$node.toggle();
   // console.log($node2);
 };
 
