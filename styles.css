@@ -29,24 +29,23 @@ body, a:link, a:visited, a:active {
   background-color: #777;
 }
 
-.defaultDance {
+.defaultDancer {
   border:10px;
   border-radius:10px;
-  position:absolute;
+  position: absolute;
 }
 
 .blinkyDancer {
   border:10px;
   border-radius: 10px;
-  position:absolute;
+  /* position:absolute; */
 }
 
 .growingDancer {
   transition: all .2s ease-in-out;
-  border: 15px solid pink;
+  border: 15px solid white;
   border-radius: 18px;
 }
-
 
 .planeDancer {
   /* width: 50%;

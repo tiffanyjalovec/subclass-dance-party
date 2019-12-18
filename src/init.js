@@ -60,5 +60,18 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
   });
+
+  $('.lineUpButton').on('click', function(event) {
+    $('.defaultDancer').animate({right: '10px'});
+  });
+
+  //var plane = this;
+  console.log($('.planeDancer'), '$planeDancer');
+  $('.planeDancer').on('click', function(event) {
+    // $('.planeDancer').css({"background-color": "yellow", "font-size": "200%"});
+    console.log('mousing over');
+  });
+  //plane.$node.css(styleSettings);
+
 });
 
